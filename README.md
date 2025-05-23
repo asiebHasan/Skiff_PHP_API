@@ -142,3 +142,8 @@ All responses are JSON format:
   "error": "Error message (if any)"
 }
 ```
+
+## FEATURES
+1. File Upload with Ticket
+2. Rate limit to 30 second for submission
+3. File Base Token storage
