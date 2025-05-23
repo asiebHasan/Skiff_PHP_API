@@ -46,18 +46,17 @@ Headers:
 Authorization: Bearer {token}
 ```
 
-Department
-Get Departments
+## Department
+### Get Departments
 ```http
 GET /department/getdepartments
 Headers:
-```
 Authorization: Bearer {token}
-Create Department
+```
+### Create Department
 ```http
 POST /department/create
 Headers:
-
 Authorization: Bearer {token}
 Content-Type: application/json
 ```
