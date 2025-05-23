@@ -16,9 +16,9 @@
 #### Login
 ```http
 POST /auth/login
-Request Body (JSON):
-```
 
+```
+Request Body (JSON):
 ```json
 {
   "email": "user@example.com",
@@ -28,8 +28,9 @@ Request Body (JSON):
 Register
 ```http
 POST /auth/register
-Request Body (JSON):
+
 ```
+Request Body (JSON):
 ```json
 {
   "email": "new@example.com",
@@ -82,6 +83,7 @@ Headers:
 
 Authorization: Bearer {token}
 Content-Type: multipart/form-data
+```
 Form Data:
 
 title: string
@@ -93,7 +95,7 @@ status: string
 department_id: int
 
 user_id: int
-```
+
 
 file: File upload (optional)
 
@@ -129,7 +131,8 @@ Content-Type: application/json
 {
   "user_id": 3,
   "note": "Additional information"
-}```
+}
+```
 ###Response Format
 All responses are JSON format:
 
@@ -138,14 +141,5 @@ All responses are JSON format:
   "success": true|false,
   "data": { ... },
   "error": "Error message (if any)"
-}```
-
-
-```
-This documentation:
-1. Removes redundant headers (Postman-specific headers)
-2. Simplifies request/response examples
-3. Groups endpoints by resource
-4. Provides clear structure for API consumers
-5. Includes essential information only
+}
 ```
