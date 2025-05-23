@@ -68,15 +68,15 @@ Request Body (JSON):
   "name": "Department Name"
 }
 ```
-##Ticket
-###Get Tickets
+## Ticket
+### Get Tickets
 ```http
 GET /ticket/index
 Headers:
 
 Authorization: Bearer {token}
 ```
-###Create Ticket
+### Create Ticket
 ```http
 POST /ticket/create
 Headers:
@@ -84,7 +84,7 @@ Headers:
 Authorization: Bearer {token}
 Content-Type: multipart/form-data
 ```
-Form Data:
+### Form Data:
 
 title: string
 
@@ -99,7 +99,7 @@ user_id: int
 
 file: File upload (optional)
 
-###Update Ticket
+### Update Ticket
 ```http
 PUT /ticket/update/{ticket_id}
 Headers:
@@ -107,7 +107,7 @@ Headers:
 Authorization: Bearer {token}
 Content-Type: application/json
 ```
-###Request Body (JSON):
+### Request Body (JSON):
 
 ```json
 {
@@ -117,7 +117,7 @@ Content-Type: application/json
   "department_id": 1
 }
 ```
-###Add Ticket Note
+### Add Ticket Note
 ```http
 POST /ticket/addNote/{ticket_id}
 Headers:
@@ -125,7 +125,7 @@ Headers:
 Authorization: Bearer {token}
 Content-Type: application/json
 ```
-###Request Body (JSON):
+### Request Body (JSON):
 
 ```json
 {
@@ -133,7 +133,7 @@ Content-Type: application/json
   "note": "Additional information"
 }
 ```
-###Response Format
+### Response Format
 All responses are JSON format:
 
 ```json
