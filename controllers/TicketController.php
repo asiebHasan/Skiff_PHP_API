@@ -42,7 +42,7 @@ class TicketController extends Controller
         $departmentId = isset($input['department_id']) ? filter_var($input['department_id'], FILTER_VALIDATE_INT) : null;
 
         if (!empty($_FILES['file']) && $_FILES['file']['error'] === UPLOAD_ERR_OK) {
-            $uploadDir = __DIR__ . '/../uploads/';
+            $uploadDir = __DIR__ . '/../storage/uploads/';
             if (!is_dir($uploadDir))
                 mkdir($uploadDir);
 
