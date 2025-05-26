@@ -24,7 +24,7 @@ $requestUrl = $_GET['url'] ?? '';
 if (strpos($requestUrl, 'api/') === 0) {
     
     if (strpos($requestUrl, 'api/auth/') === 0) {
-        // No middleware needed for login/register/logo
+        
     }
     elseif (strpos($requestUrl, 'api/department/') === 0) {
         $router->addMiddleware([Middleware::class, 'authenticate']);
